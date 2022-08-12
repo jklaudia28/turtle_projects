@@ -21,7 +21,7 @@ from turtle import Screen
 t.colormode(255)
 my_screen = Screen()
 tim = t.Turtle()
-tim.shape = "turtle"
+tim.hideturtle()
 tim.speed("fastest")
 
 color_list = [(212, 149, 95), (215, 80, 62), (47, 94, 142), (231, 218, 92), (148, 66, 91), (22, 27, 40),
@@ -37,12 +37,12 @@ tim.setheading(0)
 def raws():
     for _ in range(10):
         tim.dot(20,random.choice(color_list))
-        tim.forward(30)
+        tim.forward(40)
 
 def draw():
     for _ in range (10):
         raws()
-        tim.back(300)
+        tim.back(400)
         tim.left(90)
         tim.forward(30)
         tim.right(90)
