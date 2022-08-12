@@ -44,7 +44,7 @@ def draw():
         raws()
         tim.back(400)
         tim.left(90)
-        tim.forward(30)
+        tim.forward(40)
         tim.right(90)
 
 draw()
